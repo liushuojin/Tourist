@@ -15,6 +15,7 @@
 		696393CF1CBEA205009F334F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696393CD1CBEA205009F334F /* LaunchScreen.storyboard */; };
 		696393DA1CBEA205009F334F /* Tourist2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 696393D91CBEA205009F334F /* Tourist2Tests.m */; };
 		696393E51CBEA205009F334F /* Tourist2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 696393E41CBEA205009F334F /* Tourist2UITests.m */; };
+		69815D011CC0900C00E5A3D5 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69815D001CC0900C00E5A3D5 /* UserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		696393E01CBEA205009F334F /* Tourist2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tourist2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		696393E41CBEA205009F334F /* Tourist2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tourist2UITests.m; sourceTree = "<group>"; };
 		696393E61CBEA205009F334F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69815CFF1CC0900C00E5A3D5 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		69815D001CC0900C00E5A3D5 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		696393BE1CBEA205009F334F /* Tourist2 */ = {
 			isa = PBXGroup;
 			children = (
+				69815CFE1CC07C5C00E5A3D5 /* Controller */,
 				696393C21CBEA205009F334F /* AppDelegate.h */,
 				696393C31CBEA205009F334F /* AppDelegate.m */,
 				696393C51CBEA205009F334F /* ViewController.h */,
@@ -138,6 +142,15 @@
 				696393E61CBEA205009F334F /* Info.plist */,
 			);
 			path = Tourist2UITests;
+			sourceTree = "<group>";
+		};
+		69815CFE1CC07C5C00E5A3D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69815CFF1CC0900C00E5A3D5 /* UserViewController.h */,
+				69815D001CC0900C00E5A3D5 /* UserViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				696393C71CBEA205009F334F /* ViewController.m in Sources */,
+				69815D011CC0900C00E5A3D5 /* UserViewController.m in Sources */,
 				696393C41CBEA205009F334F /* AppDelegate.m in Sources */,
 				696393C11CBEA205009F334F /* main.m in Sources */,
 			);
@@ -501,6 +515,7 @@
 				696393EB1CBEA205009F334F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		696393EC1CBEA205009F334F /* Build configuration list for PBXNativeTarget "Tourist2Tests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +524,7 @@
 				696393EE1CBEA205009F334F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		696393EF1CBEA205009F334F /* Build configuration list for PBXNativeTarget "Tourist2UITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +533,7 @@
 				696393F11CBEA205009F334F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
