@@ -16,6 +16,8 @@
 		696393DA1CBEA205009F334F /* Tourist2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 696393D91CBEA205009F334F /* Tourist2Tests.m */; };
 		696393E51CBEA205009F334F /* Tourist2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 696393E41CBEA205009F334F /* Tourist2UITests.m */; };
 		69815D011CC0900C00E5A3D5 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69815D001CC0900C00E5A3D5 /* UserViewController.m */; };
+		69815D041CC092AA00E5A3D5 /* SpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69815D031CC092AA00E5A3D5 /* SpotViewController.m */; };
+		69815D071CC0930500E5A3D5 /* RouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69815D061CC0930500E5A3D5 /* RouteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		696393E61CBEA205009F334F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69815CFF1CC0900C00E5A3D5 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
 		69815D001CC0900C00E5A3D5 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		69815D021CC092AA00E5A3D5 /* SpotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotViewController.h; sourceTree = "<group>"; };
+		69815D031CC092AA00E5A3D5 /* SpotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotViewController.m; sourceTree = "<group>"; };
+		69815D051CC0930500E5A3D5 /* RouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteViewController.h; sourceTree = "<group>"; };
+		69815D061CC0930500E5A3D5 /* RouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,10 @@
 			children = (
 				69815CFF1CC0900C00E5A3D5 /* UserViewController.h */,
 				69815D001CC0900C00E5A3D5 /* UserViewController.m */,
+				69815D021CC092AA00E5A3D5 /* SpotViewController.h */,
+				69815D031CC092AA00E5A3D5 /* SpotViewController.m */,
+				69815D051CC0930500E5A3D5 /* RouteViewController.h */,
+				69815D061CC0930500E5A3D5 /* RouteViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -288,7 +298,9 @@
 			files = (
 				696393C71CBEA205009F334F /* ViewController.m in Sources */,
 				69815D011CC0900C00E5A3D5 /* UserViewController.m in Sources */,
+				69815D071CC0930500E5A3D5 /* RouteViewController.m in Sources */,
 				696393C41CBEA205009F334F /* AppDelegate.m in Sources */,
+				69815D041CC092AA00E5A3D5 /* SpotViewController.m in Sources */,
 				696393C11CBEA205009F334F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
