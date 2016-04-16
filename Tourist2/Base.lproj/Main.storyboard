@@ -21,12 +21,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1109" y="364"/>
+            <point key="canvasLocation" x="1619" y="-751"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="e9c-st-OTU">
             <objects>
-                <tableViewController id="Uwd-8l-Mck" sceneMemberID="viewController">
+                <tableViewController id="Uwd-8l-Mck" customClass="SpotTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7tu-Fn-eDF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EOC-5X-b8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2025" y="355"/>
+            <point key="canvasLocation" x="1099" y="-99"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="GaA-gS-yBn">
@@ -79,12 +79,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9r-Ab-89v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1229" y="559"/>
+            <point key="canvasLocation" x="1089" y="685"/>
         </scene>
         <!--Item-->
         <scene sceneID="31Q-Aa-Zjm">
             <objects>
-                <viewController id="eGg-e9-UOc" sceneMemberID="viewController">
+                <viewController id="eGg-e9-UOc" customClass="UserViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nrz-lj-Qvi"/>
                         <viewControllerLayoutGuide type="bottom" id="ZJm-VN-5b5"/>
@@ -98,12 +98,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8S-zq-nT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="707" y="80"/>
+            <point key="canvasLocation" x="87" y="-875"/>
         </scene>
         <!--Item-->
         <scene sceneID="0jN-pf-gkz">
             <objects>
-                <navigationController id="93c-KT-7vy" sceneMemberID="viewController">
+                <navigationController id="93c-KT-7vy" customClass="RouteViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="uHG-lu-vRI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p58-Yp-L7N">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -115,12 +115,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQe-H7-ecg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="409" y="559"/>
+            <point key="canvasLocation" x="149" y="499"/>
         </scene>
         <!--Item-->
         <scene sceneID="bL1-v3-gre">
             <objects>
-                <navigationController id="c6v-w5-mft" sceneMemberID="viewController">
+                <navigationController id="c6v-w5-mft" customClass="SpotViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="L4Q-07-XRs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jZz-vW-LoT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -132,7 +132,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cah-ia-dVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205" y="355"/>
+            <point key="canvasLocation" x="93" y="-175"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="VcO-17-lol">
@@ -151,7 +151,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NxM-Hf-EDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-403" y="319"/>
+            <point key="canvasLocation" x="-691" y="3"/>
         </scene>
     </scenes>
 </document>
