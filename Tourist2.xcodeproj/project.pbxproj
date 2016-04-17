@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69005AEA1CC3AE2D00AD0DFB /* Spot.m in Sources */ = {isa = PBXBuildFile; fileRef = 69005AE91CC3AE2D00AD0DFB /* Spot.m */; };
 		696393C11CBEA205009F334F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 696393C01CBEA205009F334F /* main.m */; };
 		696393C41CBEA205009F334F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 696393C31CBEA205009F334F /* AppDelegate.m */; };
 		696393C71CBEA205009F334F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 696393C61CBEA205009F334F /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69005AE81CC3AE2D00AD0DFB /* Spot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spot.h; sourceTree = "<group>"; };
+		69005AE91CC3AE2D00AD0DFB /* Spot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spot.m; sourceTree = "<group>"; };
 		696393BC1CBEA205009F334F /* Tourist2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tourist2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		696393C01CBEA205009F334F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		696393C21CBEA205009F334F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69005AE71CC3AC2D00AD0DFB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				69005AE81CC3AE2D00AD0DFB /* Spot.h */,
+				69005AE91CC3AE2D00AD0DFB /* Spot.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
 		696393B31CBEA205009F334F = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +125,7 @@
 		696393BE1CBEA205009F334F /* Tourist2 */ = {
 			isa = PBXGroup;
 			children = (
+				69005AE71CC3AC2D00AD0DFB /* Entity */,
 				69815CFE1CC07C5C00E5A3D5 /* Controller */,
 				696393C21CBEA205009F334F /* AppDelegate.h */,
 				696393C31CBEA205009F334F /* AppDelegate.m */,
@@ -308,6 +321,7 @@
 				696393C41CBEA205009F334F /* AppDelegate.m in Sources */,
 				69815D041CC092AA00E5A3D5 /* SpotViewController.m in Sources */,
 				696393C11CBEA205009F334F /* main.m in Sources */,
+				69005AEA1CC3AE2D00AD0DFB /* Spot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "SpotTableViewController.h"
+#import "Spot.h"
 
 @interface SpotTableViewController ()
 //-(void)getSpotsData;
@@ -53,9 +54,12 @@
     NSString *str1 = [[NSString alloc]initWithData:received encoding:NSUTF8StringEncoding];
     NSLog(@"%@",str1);
     self.data = str1;
-    
-    
-
+    //NSDictionary* spotDic = [NSJSONSerialization JSONObjectWithData:received options:NSJSONReadingMutableLeaves error:nil];
+    //NSLog(@"spot:%@", spotDic);
+    //Spot *s = [Spot spotWithDict:spotDic];
+    //NSLog(@"%@", s);
+    self.spotArray = [[NSArray alloc] initWithArray:[NSJSONSerialization JSONObjectWithData:received options:NSJSONReadingMutableContainers error:nil]];
+    NSLog(@"spots:%@", self.spotArray);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -72,22 +76,27 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 1;
+    
+    [self getSpotsData];
+    
+    return [self.spotArray count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [self getSpotsData];
     static NSString* CellIdentifier = @"Cell";
     UITableViewCell *cell ;//= [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
 
-    [[cell textLabel] setText:self.data];
-    NSLog(@"data:%@", self.data);
+    //[[cell textLabel] setText:self.data];
+    //NSLog(@"data:%@", self.data);
     // Configure the cell...
+    NSDictionary* dict = [self.spotArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [dict valueForKey:@"name"];
+    cell.detailTextLabel.text = [dict valueForKey:@"intro"];
     
     return cell;
 }

@@ -11,5 +11,7 @@
 @interface SpotTableViewController : UITableViewController
 
 @property NSString* data;
+@property NSMutableArray* spots;
+@property NSArray* spotArray;
 
 @end
