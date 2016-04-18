@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SpotTableViewController : UITableViewController
+@interface SpotTableViewController : UITableViewController<UITableViewDelegate>
 
 @property NSString* data;
 @property NSMutableArray* spots;

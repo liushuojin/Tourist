@@ -20,6 +20,7 @@
 		69815D041CC092AA00E5A3D5 /* SpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69815D031CC092AA00E5A3D5 /* SpotViewController.m */; };
 		69815D071CC0930500E5A3D5 /* RouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69815D061CC0930500E5A3D5 /* RouteViewController.m */; };
 		69815D0A1CC20C6000E5A3D5 /* SpotTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69815D091CC20C6000E5A3D5 /* SpotTableViewController.m */; };
+		69FC43DD1CC51B34005AB110 /* SpotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FC43DC1CC51B34005AB110 /* SpotDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		69815D061CC0930500E5A3D5 /* RouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteViewController.m; sourceTree = "<group>"; };
 		69815D081CC20C6000E5A3D5 /* SpotTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotTableViewController.h; sourceTree = "<group>"; };
 		69815D091CC20C6000E5A3D5 /* SpotTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotTableViewController.m; sourceTree = "<group>"; };
+		69FC43DB1CC51B34005AB110 /* SpotDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotDetailViewController.h; sourceTree = "<group>"; };
+		69FC43DC1CC51B34005AB110 /* SpotDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +180,8 @@
 				69815D061CC0930500E5A3D5 /* RouteViewController.m */,
 				69815D081CC20C6000E5A3D5 /* SpotTableViewController.h */,
 				69815D091CC20C6000E5A3D5 /* SpotTableViewController.m */,
+				69FC43DB1CC51B34005AB110 /* SpotDetailViewController.h */,
+				69FC43DC1CC51B34005AB110 /* SpotDetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				69815D071CC0930500E5A3D5 /* RouteViewController.m in Sources */,
 				69815D0A1CC20C6000E5A3D5 /* SpotTableViewController.m in Sources */,
 				696393C41CBEA205009F334F /* AppDelegate.m in Sources */,
+				69FC43DD1CC51B34005AB110 /* SpotDetailViewController.m in Sources */,
 				69815D041CC092AA00E5A3D5 /* SpotViewController.m in Sources */,
 				696393C11CBEA205009F334F /* main.m in Sources */,
 				69005AEA1CC3AE2D00AD0DFB /* Spot.m in Sources */,

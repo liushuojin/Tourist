@@ -8,6 +8,7 @@
 
 #import "SpotTableViewController.h"
 #import "Spot.h"
+#import "SpotDetailViewController.h"
 
 @interface SpotTableViewController ()
 //-(void)getSpotsData;
@@ -145,5 +146,13 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SpotDetailViewController* spotDetail = [[SpotDetailViewController alloc] init];
+    //NSDictionary* dict = [self.spotArray objectAtIndex:indexPath.row];
+
+    //cell.textLabel.text = [dict valueForKey:@"name"];
+    [self.navigationController pushViewController:spotDetail animated:YES];
+}
 
 @end
