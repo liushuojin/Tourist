@@ -1,34 +1,28 @@
 //
-//  SpotDetailViewController.m
+//  RegisterAndLoginViewController.m
 //  Tourist2
 //
-//  Created by 刘硕晋 on 16/4/18.
+//  Created by 刘硕晋 on 16/4/21.
 //  Copyright © 2016年 ginkee. All rights reserved.
 //
 
-#import "SpotDetailViewController.h"
+#import "RegisterAndLoginViewController.h"
 
-@interface SpotDetailViewController ()
-@property (strong, nonatomic) IBOutlet UIView *test;
-@property (weak, nonatomic) IBOutlet UILabel *name;
-@property (weak, nonatomic) IBOutlet UILabel *intro;
-
-@property (weak, nonatomic) IBOutlet UILabel *trans;
+@interface RegisterAndLoginViewController ()
 
 
 
 @end
 
-@implementation SpotDetailViewController
+@implementation RegisterAndLoginViewController
+- (IBAction)login:(id)sender {
+    [self performSegueWithIdentifier:@"toMain" sender:self];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //NSLog(@"dal");
-    NSLog(@"%@", self.name.text);
-    self.name.text = self.name1;
-    self.intro.text = self.intro1;
-    self.trans.text = self.trans1;
+    NSLog(@"俺来啦");
 }
 
 - (void)didReceiveMemoryWarning {

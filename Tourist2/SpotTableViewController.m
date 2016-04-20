@@ -148,10 +148,17 @@
 */
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-    SpotDetailViewController* spotDetail = [[SpotDetailViewController alloc] init];
-    //NSDictionary* dict = [self.spotArray objectAtIndex:indexPath.row];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SpotDetailViewController* spotDetail = [storyboard instantiateViewControllerWithIdentifier:@"spotDetail"];
+    NSDictionary* dict = [self.spotArray objectAtIndex:indexPath.row];
 
     //cell.textLabel.text = [dict valueForKey:@"name"];
+    //spotDetail
+    //NSLog(@"%@", spotDetail);
+    NSLog(@"%@", [dict valueForKey:@"intro"]);
+    [spotDetail setIntro1:[dict valueForKey:@"intro"]];
+    [spotDetail setName1:[dict valueForKey:@"name"]];
+    [spotDetail setTrans1:[dict valueForKey:@"trans"]];
     [self.navigationController pushViewController:spotDetail animated:YES];
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RegisterAndLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //RegisterAndLoginViewController* registerAndLoginViewController = [[RegisterAndLoginViewController alloc] init];
+    //[self.window addSubview:registerAndLoginViewController];
+    
+    /*UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
+    RegisterAndLoginViewController* registerAndLoginViewController = [storyboard instantiateViewControllerWithIdentifier:@"registerAndLoginViewController"];
+    [self.window addSubview:registerAndLoginViewController];*/
     return YES;
 }
 
