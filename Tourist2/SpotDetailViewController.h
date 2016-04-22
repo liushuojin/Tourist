@@ -13,6 +13,7 @@
 @property NSString* intro1;
 @property NSString* name1;
 @property NSString* trans1;
+@property NSString* userName;
 
 
 @end

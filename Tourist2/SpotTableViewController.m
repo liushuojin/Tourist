@@ -9,6 +9,7 @@
 #import "SpotTableViewController.h"
 #import "Spot.h"
 #import "SpotDetailViewController.h"
+#import "SpotViewController.h"
 
 @interface SpotTableViewController ()
 //-(void)getSpotsData;
@@ -159,7 +160,9 @@
     [spotDetail setIntro1:[dict valueForKey:@"intro"]];
     [spotDetail setName1:[dict valueForKey:@"name"]];
     [spotDetail setTrans1:[dict valueForKey:@"trans"]];
-    
+    SpotViewController *vc = self.navigationController;
+    //NSLog(@"na->:%@", vc.nameText);
+    [spotDetail setUserName:vc.nameText];
     [self.navigationController pushViewController:spotDetail animated:YES];
 }
 

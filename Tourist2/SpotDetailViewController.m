@@ -25,10 +25,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     //NSLog(@"dal");
-    NSLog(@"%@", self.name.text);
+    //NSLog(@"%@", self.name.text);
     self.name.text = self.name1;
     self.intro.text = self.intro1;
     self.trans.text = self.trans1;
+    NSLog(@"user:%@", self.userName);
 }
 
 - (void)didReceiveMemoryWarning {
