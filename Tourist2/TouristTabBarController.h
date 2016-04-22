@@ -10,4 +10,6 @@
 
 @interface TouristTabBarController : UITabBarController
 
+@property NSString* nameText;
+
 @end
