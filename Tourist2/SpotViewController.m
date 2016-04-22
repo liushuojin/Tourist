@@ -7,6 +7,7 @@
 //
 
 #import "SpotViewController.h"
+#import "TouristTabBarController.h"
 
 @interface SpotViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    TouristTabBarController* vc = self.tabBarController;
+    self.nameText = vc.nameText;
+    NSLog(@"navigationController:%@", self.nameText);
 }
 
 - (void)didReceiveMemoryWarning {

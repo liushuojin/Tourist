@@ -178,22 +178,46 @@
 		69815CFE1CC07C5C00E5A3D5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				69815CFF1CC0900C00E5A3D5 /* UserViewController.h */,
-				69815D001CC0900C00E5A3D5 /* UserViewController.m */,
+				69F645681CCA9E21000D8F8C /* User */,
+				69F645671CCA9DFB000D8F8C /* Route */,
+				69F645661CCA9DAC000D8F8C /* Spot */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		69F645661CCA9DAC000D8F8C /* Spot */ = {
+			isa = PBXGroup;
+			children = (
 				69815D021CC092AA00E5A3D5 /* SpotViewController.h */,
 				69815D031CC092AA00E5A3D5 /* SpotViewController.m */,
-				69815D051CC0930500E5A3D5 /* RouteViewController.h */,
-				69815D061CC0930500E5A3D5 /* RouteViewController.m */,
 				69815D081CC20C6000E5A3D5 /* SpotTableViewController.h */,
 				69815D091CC20C6000E5A3D5 /* SpotTableViewController.m */,
 				69FC43DB1CC51B34005AB110 /* SpotDetailViewController.h */,
 				69FC43DC1CC51B34005AB110 /* SpotDetailViewController.m */,
+			);
+			name = Spot;
+			sourceTree = "<group>";
+		};
+		69F645671CCA9DFB000D8F8C /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				69815D051CC0930500E5A3D5 /* RouteViewController.h */,
+				69815D061CC0930500E5A3D5 /* RouteViewController.m */,
+			);
+			name = Route;
+			sourceTree = "<group>";
+		};
+		69F645681CCA9E21000D8F8C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				69815CFF1CC0900C00E5A3D5 /* UserViewController.h */,
+				69815D001CC0900C00E5A3D5 /* UserViewController.m */,
 				69F8676B1CC7F0690080D8DD /* RegisterAndLoginViewController.h */,
 				69F8676C1CC7F0690080D8DD /* RegisterAndLoginViewController.m */,
 				69F645631CCA6959000D8F8C /* TouristTabBarController.h */,
 				69F645641CCA6959000D8F8C /* TouristTabBarController.m */,
 			);
-			name = Controller;
+			name = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

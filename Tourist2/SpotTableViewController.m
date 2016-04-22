@@ -159,6 +159,7 @@
     [spotDetail setIntro1:[dict valueForKey:@"intro"]];
     [spotDetail setName1:[dict valueForKey:@"name"]];
     [spotDetail setTrans1:[dict valueForKey:@"trans"]];
+    
     [self.navigationController pushViewController:spotDetail animated:YES];
 }
 

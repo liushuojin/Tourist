@@ -10,4 +10,6 @@
 
 @interface SpotViewController : UINavigationController
 
+@property NSString* nameText;
+
 @end
