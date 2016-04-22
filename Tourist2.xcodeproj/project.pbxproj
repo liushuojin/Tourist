@@ -20,6 +20,7 @@
 		69815D041CC092AA00E5A3D5 /* SpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69815D031CC092AA00E5A3D5 /* SpotViewController.m */; };
 		69815D071CC0930500E5A3D5 /* RouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69815D061CC0930500E5A3D5 /* RouteViewController.m */; };
 		69815D0A1CC20C6000E5A3D5 /* SpotTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69815D091CC20C6000E5A3D5 /* SpotTableViewController.m */; };
+		69F645651CCA6959000D8F8C /* TouristTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F645641CCA6959000D8F8C /* TouristTabBarController.m */; };
 		69F8676D1CC7F0690080D8DD /* RegisterAndLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F8676C1CC7F0690080D8DD /* RegisterAndLoginViewController.m */; };
 		69FC43DD1CC51B34005AB110 /* SpotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FC43DC1CC51B34005AB110 /* SpotDetailViewController.m */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,8 @@
 		69815D061CC0930500E5A3D5 /* RouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteViewController.m; sourceTree = "<group>"; };
 		69815D081CC20C6000E5A3D5 /* SpotTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotTableViewController.h; sourceTree = "<group>"; };
 		69815D091CC20C6000E5A3D5 /* SpotTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotTableViewController.m; sourceTree = "<group>"; };
+		69F645631CCA6959000D8F8C /* TouristTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouristTabBarController.h; sourceTree = "<group>"; };
+		69F645641CCA6959000D8F8C /* TouristTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouristTabBarController.m; sourceTree = "<group>"; };
 		69F8676B1CC7F0690080D8DD /* RegisterAndLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAndLoginViewController.h; sourceTree = "<group>"; };
 		69F8676C1CC7F0690080D8DD /* RegisterAndLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAndLoginViewController.m; sourceTree = "<group>"; };
 		69FC43DB1CC51B34005AB110 /* SpotDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotDetailViewController.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				69FC43DC1CC51B34005AB110 /* SpotDetailViewController.m */,
 				69F8676B1CC7F0690080D8DD /* RegisterAndLoginViewController.h */,
 				69F8676C1CC7F0690080D8DD /* RegisterAndLoginViewController.m */,
+				69F645631CCA6959000D8F8C /* TouristTabBarController.h */,
+				69F645641CCA6959000D8F8C /* TouristTabBarController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 				696393C71CBEA205009F334F /* ViewController.m in Sources */,
 				69815D011CC0900C00E5A3D5 /* UserViewController.m in Sources */,
 				69815D071CC0930500E5A3D5 /* RouteViewController.m in Sources */,
+				69F645651CCA6959000D8F8C /* TouristTabBarController.m in Sources */,
 				69815D0A1CC20C6000E5A3D5 /* SpotTableViewController.m in Sources */,
 				69F8676D1CC7F0690080D8DD /* RegisterAndLoginViewController.m in Sources */,
 				696393C41CBEA205009F334F /* AppDelegate.m in Sources */,

@@ -239,10 +239,10 @@
             </objects>
             <point key="canvasLocation" x="93" y="-175"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tourist Tab Bar Controller-->
         <scene sceneID="VcO-17-lol">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qCd-ZJ-tUO" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qCd-ZJ-tUO" customClass="TouristTabBarController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="3Wn-nC-fng">
                         <autoresizingMask key="autoresizingMask"/>
