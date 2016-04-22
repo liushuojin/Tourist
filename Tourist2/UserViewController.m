@@ -7,8 +7,10 @@
 //
 
 #import "UserViewController.h"
+#import "TouristTabBarController.h"
 
 @interface UserViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *name;
 
 @end
 
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    TouristTabBarController *vc = self.tabBarController;
+    self.name.text = vc.nameText;
+    
 }
 
 - (void)didReceiveMemoryWarning {
