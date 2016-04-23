@@ -111,13 +111,23 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oTN-el-FU8">
                                 <rect key="frame" x="400" y="118" width="51" height="31"/>
+                                <connections>
+                                    <action selector="favo:" destination="gzJ-80-tFk" eventType="valueChanged" id="UCD-rp-4gY"/>
+                                </connections>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ue-td-7Np">
+                                <rect key="frame" x="478" y="123" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qew-4A-DhG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="favoMsg" destination="2ue-td-7Np" id="1nf-EF-eLx"/>
                         <outlet property="intro" destination="lyU-Ss-4Mh" id="abF-RM-ShF"/>
                         <outlet property="isFavorite" destination="oTN-el-FU8" id="kL7-3f-JUS"/>
                         <outlet property="name" destination="Exo-db-jsl" id="Wfc-y5-NdW"/>
