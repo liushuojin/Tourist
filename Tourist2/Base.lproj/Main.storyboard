@@ -119,6 +119,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="intro" destination="lyU-Ss-4Mh" id="abF-RM-ShF"/>
+                        <outlet property="isFavorite" destination="oTN-el-FU8" id="kL7-3f-JUS"/>
                         <outlet property="name" destination="Exo-db-jsl" id="Wfc-y5-NdW"/>
                         <outlet property="test" destination="IMG-x7-4gg" id="Pqm-HN-t0z"/>
                         <outlet property="trans" destination="IdM-lF-iyS" id="wgs-iL-Go7"/>

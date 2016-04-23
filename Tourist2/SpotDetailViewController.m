@@ -15,6 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *trans;
 
+@property (weak, nonatomic) IBOutlet UISwitch *isFavorite;
 
 
 @end
@@ -31,12 +32,12 @@
     self.trans.text = self.trans1;
     NSLog(@"user:%@, id:%@", self.userName, self.spotId);
     
-    [self favFunc];
+    [self isFav];
     
     
 }
 
-- (void)favFunc{
+- (void)isFav{
     
     NSURL* url = [NSURL URLWithString:@"http://192.168.137.1:8080/Tourist/spotFavorite.spring"];
     NSString* name = self.name.text;
@@ -55,7 +56,7 @@
     
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
         
-        /*NSLog(@"%@", data);
+        NSLog(@"%@", data);
         
         NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         
@@ -68,14 +69,14 @@
         if ([str isEqualToString:@"yes"]) {
             
             
-            [self performSegueWithIdentifier:@"toMain" sender:self];
+            [self.isFavorite setOn:YES];
             
             
         } else {
             
-            self.msg.text = @"登录失败";
-            
-        }*/
+            [self.isFavorite setOn:NO];
+        
+        }
         
     }];
     
