@@ -160,6 +160,7 @@
     [spotDetail setIntro1:[dict valueForKey:@"intro"]];
     [spotDetail setName1:[dict valueForKey:@"name"]];
     [spotDetail setTrans1:[dict valueForKey:@"trans"]];
+    [spotDetail setSpotId:[dict valueForKey:@"id"]];
     SpotViewController *vc = self.navigationController;
     //NSLog(@"na->:%@", vc.nameText);
     [spotDetail setUserName:vc.nameText];

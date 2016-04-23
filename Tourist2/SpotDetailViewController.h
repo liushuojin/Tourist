@@ -14,6 +14,7 @@
 @property NSString* name1;
 @property NSString* trans1;
 @property NSString* userName;
+@property NSNumber* spotId;
 
 
 @end
