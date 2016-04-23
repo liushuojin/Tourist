@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UISwitch *isFavorite;
 @property (weak, nonatomic) IBOutlet UILabel *favoMsg;
 
+@property (weak, nonatomic) IBOutlet UISlider *score;
+@property (weak, nonatomic) IBOutlet UITextView *comment;
 
 @end
 
@@ -135,10 +137,29 @@
         }
     }];
     
+}
+- (IBAction)rate:(id)sender {
     
-    
-    
-    
+    NSURL* url = [NSURL URLWithString:@"http://192.168.137.1:8080/Tourist/addSpotRating.spring"];
+    NSString* name = self.name.text;
+    //NSString* password = self.password.text;
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
+    request.HTTPMethod = @"POST";
+    NSString* bodyStr = [NSString stringWithFormat:@"username=%@&spotid=%@&score=%f&comment=%@", self.userName, self.spotId, self.score.value, self.comment.text];
+    request.HTTPBody = [bodyStr dataUsingEncoding:NSUTF8StringEncoding];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+        //NSLog(@"%@", data);
+        NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"result:%@",str);
+        if ([str isEqualToString:@"yes"]) {
+            //self.favoMsg.text = @"取消收藏成功";
+            self.comment.text = @"评论成功";
+        } else {
+            //self.favoMsg.text = @"取消收藏失败";
+            self.comment.text = @"评论失败";
+        }
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {

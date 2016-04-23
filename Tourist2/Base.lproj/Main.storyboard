@@ -82,15 +82,9 @@
                         <viewControllerLayoutGuide type="bottom" id="ree-ZV-x03"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IMG-x7-4gg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="刘硕晋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgN-DL-YQC">
-                                <rect key="frame" x="227" y="521" width="112" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="intro" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyU-Ss-4Mh">
                                 <rect key="frame" x="101" y="141" width="379" height="101"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -121,23 +115,54 @@
                                     <action selector="favo:" destination="gzJ-80-tFk" eventType="valueChanged" id="UCD-rp-4gY"/>
                                 </connections>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="撰写评论：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxM-vr-N2w">
+                                <rect key="frame" x="110" y="663" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EV6-n5-avC">
+                                <rect key="frame" x="276" y="663" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="评分：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEv-jy-B0s">
+                                <rect key="frame" x="101" y="601" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="9mG-tu-0AW">
+                                <rect key="frame" x="274" y="578" width="244" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZc-Lw-fdW">
+                                <rect key="frame" x="307" y="909" width="152" height="30"/>
+                                <state key="normal" title="提交评论"/>
+                                <connections>
+                                    <action selector="rate:" destination="gzJ-80-tFk" eventType="touchUpInside" id="F85-W8-A4x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qew-4A-DhG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPadPro"/>
                     <connections>
+                        <outlet property="comment" destination="EV6-n5-avC" id="SO3-IP-Wed"/>
                         <outlet property="favoMsg" destination="2ue-td-7Np" id="1nf-EF-eLx"/>
                         <outlet property="intro" destination="lyU-Ss-4Mh" id="abF-RM-ShF"/>
                         <outlet property="isFavorite" destination="oTN-el-FU8" id="kL7-3f-JUS"/>
                         <outlet property="name" destination="Exo-db-jsl" id="Wfc-y5-NdW"/>
+                        <outlet property="score" destination="9mG-tu-0AW" id="b5R-2g-0Yb"/>
                         <outlet property="test" destination="IMG-x7-4gg" id="Pqm-HN-t0z"/>
                         <outlet property="trans" destination="IdM-lF-iyS" id="wgs-iL-Go7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVl-VY-Dri" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1493" y="-129"/>
+            <point key="canvasLocation" x="1917" y="-558"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="e9c-st-OTU">
