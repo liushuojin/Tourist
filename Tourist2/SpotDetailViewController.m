@@ -7,6 +7,7 @@
 //
 
 #import "SpotDetailViewController.h"
+#import "SpotRatingTableViewController.h"
 
 @interface SpotDetailViewController ()
 @property (strong, nonatomic) IBOutlet UIView *test;
@@ -156,7 +157,7 @@
             self.comment.text = @"评论成功";
         } else {
             //self.favoMsg.text = @"取消收藏失败";
-            self.comment.text = @"评论失败";
+            self.comment.text = @"评论失败，您已被禁言";
         }
     }];
 
@@ -176,5 +177,26 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)getSpotRating:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SpotRatingTableViewController* sr = [storyboard instantiateViewControllerWithIdentifier:@"spotRatingTableViewController"];
+    /*NSDictionary* dict = [self.spotArray objectAtIndex:indexPath.row];
+    
+    //cell.textLabel.text = [dict valueForKey:@"name"];
+    //spotDetail
+    //NSLog(@"%@", spotDetail);
+    NSLog(@"%@", [dict valueForKey:@"intro"]);
+    [spotDetail setIntro1:[dict valueForKey:@"intro"]];
+    [spotDetail setName1:[dict valueForKey:@"name"]];
+    [spotDetail setTrans1:[dict valueForKey:@"trans"]];
+    [spotDetail setSpotId:[dict valueForKey:@"id"]];
+    SpotViewController *vc = self.navigationController;
+    //NSLog(@"na->:%@", vc.nameText);
+    [spotDetail setUserName:vc.nameText];*/
+    [sr setSpotId:self.spotId];
+    [self.navigationController pushViewController:sr animated:YES];
+}
+
 
 @end
