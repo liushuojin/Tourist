@@ -10,6 +10,17 @@
 
 @interface RouteDetailViewController ()
 
+//@property (strong, nonatomic) IBOutlet UIView *test;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *intro;
+
+//@property (weak, nonatomic) IBOutlet UILabel *trans;
+
+@property (weak, nonatomic) IBOutlet UISwitch *isFavorite;
+@property (weak, nonatomic) IBOutlet UILabel *favoMsg;
+
+@property (weak, nonatomic) IBOutlet UISlider *score;
+@property (weak, nonatomic) IBOutlet UITextView *comment;
 @end
 
 @implementation RouteDetailViewController
@@ -17,7 +28,93 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.name.text = self.name1;
+    self.intro.text = self.intro1;
+    //self.trans.text = self.trans1;
+    NSLog(@"user:%@, id:%@", self.userName, self.routeId);
+    
+    [self isFav];
 }
+
+
+- (void)isFav{
+    NSURL* url = [NSURL URLWithString:@"http://192.168.137.1:8080/Tourist/routeFavorite.spring"];
+    NSString* name = self.name.text;
+    //NSString* password = self.password.text;
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
+    request.HTTPMethod = @"POST";
+    NSString* bodyStr = [NSString stringWithFormat:@"username=%@&routeid=%@", self.userName, self.routeId];
+    request.HTTPBody = [bodyStr dataUsingEncoding:NSUTF8StringEncoding];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+        NSLog(@"%@", data);
+        NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        //self.Test.text = str;
+        //self.loginText.text = [NSString stringWithFormat:@"result:%@",str];
+        NSLog(@"result:%@",str);
+        if ([str isEqualToString:@"yes"]) {
+            [self.isFavorite setOn:YES];
+            self.favoMsg.text = @"您已收藏该路线";
+        } else {
+            [self.isFavorite setOn:NO];
+            self.favoMsg.text = @"收藏该路线";
+        }
+    }];
+}
+
+- (IBAction)favo:(id)sender {
+    //favorite
+    if ([self.isFavorite isOn]) {
+        [self favo];
+    } else {  //cancel Favorite
+        [self noFavo];
+    }
+}
+
+- (void) favo{
+    NSURL* url = [NSURL URLWithString:@"http://192.168.137.1:8080/Tourist/routeFavo.spring"];
+    NSString* name = self.name.text;
+    //NSString* password = self.password.text;
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
+    request.HTTPMethod = @"POST";
+    NSString* bodyStr = [NSString stringWithFormat:@"username=%@&routeid=%@", self.userName, self.routeId];
+    request.HTTPBody = [bodyStr dataUsingEncoding:NSUTF8StringEncoding];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+        NSLog(@"%@", data);
+        NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"result:%@",str);
+        if ([str isEqualToString:@"yes"]) {
+            self.favoMsg.text = @"收藏成功";
+            [self.isFavorite setOn:YES];
+        } else {
+            //[self.isFavorite setOn:NO];
+            self.favoMsg.text = @"收藏失败";
+        }
+    }];
+}
+
+- (void) noFavo{
+    NSURL* url = [NSURL URLWithString:@"http://192.168.137.1:8080/Tourist/routeNoFavo.spring"];
+    NSString* name = self.name.text;
+    //NSString* password = self.password.text;
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
+    request.HTTPMethod = @"POST";
+    NSString* bodyStr = [NSString stringWithFormat:@"username=%@&routeid=%@", self.userName, self.routeId];
+    request.HTTPBody = [bodyStr dataUsingEncoding:NSUTF8StringEncoding];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+        NSLog(@"%@", data);
+        NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"result:%@",str);
+        if ([str isEqualToString:@"yes"]) {
+            self.favoMsg.text = @"取消收藏成功";
+            [self.isFavorite setOn:NO];
+        } else {
+            //[self.isFavorite setOn:NO];
+            self.favoMsg.text = @"取消收藏失败";
+        }
+    }];
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

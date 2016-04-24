@@ -7,6 +7,8 @@
 //
 
 #import "RouteTableViewController.h"
+#import "RouteDetailViewController.h"
+#import "RouteViewController.h"
 
 @interface RouteTableViewController ()
 
@@ -149,5 +151,20 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    RouteDetailViewController* routeDetail = [storyboard instantiateViewControllerWithIdentifier:@"routeDetail"];
+    NSDictionary* dict = [self.routeArray objectAtIndex:indexPath.row];
+    
+    NSLog(@"%@", [dict valueForKey:@"intro"]);
+    [routeDetail setIntro1:[dict valueForKey:@"intro"]];
+    [routeDetail setName1:[dict valueForKey:@"name"]];
+    //[spotDetail setTrans1:[dict valueForKey:@"trans"]];
+    [routeDetail setRouteId:[dict valueForKey:@"id"]];
+    RouteViewController *vc = self.navigationController;
+    //NSLog(@"na->:%@", vc.nameText);
+    [routeDetail setUserName:vc.nameText];
+    [self.navigationController pushViewController:routeDetail animated:YES];
+}
 
 @end

@@ -42,49 +42,27 @@
 }
 
 - (void)isFav{
-    
     NSURL* url = [NSURL URLWithString:@"http://192.168.137.1:8080/Tourist/spotFavorite.spring"];
     NSString* name = self.name.text;
     //NSString* password = self.password.text;
-    
-    
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
-    
     request.HTTPMethod = @"POST";
-    
     NSString* bodyStr = [NSString stringWithFormat:@"username=%@&spotid=%@", self.userName, self.spotId];
-    
     request.HTTPBody = [bodyStr dataUsingEncoding:NSUTF8StringEncoding];
-    
-    
-    
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
-        
         NSLog(@"%@", data);
-        
         NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        
         //self.Test.text = str;
-        
         //self.loginText.text = [NSString stringWithFormat:@"result:%@",str];
-        
         NSLog(@"result:%@",str);
-        
         if ([str isEqualToString:@"yes"]) {
-            
-            
             [self.isFavorite setOn:YES];
             self.favoMsg.text = @"您已收藏该景点";
-
-            
         } else {
-            
             [self.isFavorite setOn:NO];
             self.favoMsg.text = @"收藏该景点";
         }
-        
     }];
-
 }
 - (IBAction)favo:(id)sender {
     //favorite
