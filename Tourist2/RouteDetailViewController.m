@@ -7,6 +7,7 @@
 //
 
 #import "RouteDetailViewController.h"
+#import "RouteRatingTableViewController.h"
 
 @interface RouteDetailViewController ()
 
@@ -114,7 +115,29 @@
     }];
     
 }
-
+- (IBAction)rate:(id)sender {
+    
+    NSURL* url = [NSURL URLWithString:@"http://192.168.137.1:8080/Tourist/addRouteRating.spring"];
+    NSString* name = self.name.text;
+    //NSString* password = self.password.text;
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
+    request.HTTPMethod = @"POST";
+    NSString* bodyStr = [NSString stringWithFormat:@"username=%@&routeid=%@&score=%f&comment=%@", self.userName, self.routeId, self.score.value, self.comment.text];
+    request.HTTPBody = [bodyStr dataUsingEncoding:NSUTF8StringEncoding];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+        //NSLog(@"%@", data);
+        NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"result:%@",str);
+        if ([str isEqualToString:@"yes"]) {
+            //self.favoMsg.text = @"取消收藏成功";
+            self.comment.text = @"评论成功";
+        } else {
+            //self.favoMsg.text = @"取消收藏失败";
+            self.comment.text = @"评论失败，您已被禁言";
+        }
+    }];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -131,4 +154,23 @@
 }
 */
 
+- (IBAction)getRouteRating:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    RouteRatingTableViewController* sr = [storyboard instantiateViewControllerWithIdentifier:@"routeRatingTableViewController"];
+    /*NSDictionary* dict = [self.spotArray objectAtIndex:indexPath.row];
+     
+     //cell.textLabel.text = [dict valueForKey:@"name"];
+     //spotDetail
+     //NSLog(@"%@", spotDetail);
+     NSLog(@"%@", [dict valueForKey:@"intro"]);
+     [spotDetail setIntro1:[dict valueForKey:@"intro"]];
+     [spotDetail setName1:[dict valueForKey:@"name"]];
+     [spotDetail setTrans1:[dict valueForKey:@"trans"]];
+     [spotDetail setSpotId:[dict valueForKey:@"id"]];
+     SpotViewController *vc = self.navigationController;
+     //NSLog(@"na->:%@", vc.nameText);
+     [spotDetail setUserName:vc.nameText];*/
+    [sr setRouteId:self.routeId];
+    [self.navigationController pushViewController:sr animated:YES];
+}
 @end

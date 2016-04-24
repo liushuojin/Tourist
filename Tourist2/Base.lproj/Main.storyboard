@@ -169,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVl-VY-Dri" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1669" y="-746"/>
+            <point key="canvasLocation" x="1501" y="-757"/>
         </scene>
         <!--Spot Rating Table View Controller-->
         <scene sceneID="1Qo-yq-NLR">
@@ -197,7 +197,35 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rkl-ky-Em5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2548" y="-843"/>
+            <point key="canvasLocation" x="2256" y="-807"/>
+        </scene>
+        <!--Route Rating Table View Controller-->
+        <scene sceneID="TIs-Ie-ZNm">
+            <objects>
+                <tableViewController storyboardIdentifier="routeRatingTableViewController" id="XQR-ZM-Dee" customClass="RouteRatingTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gg2-mt-BQu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Fn3-9p-hgV">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fn3-9p-hgV" id="FRe-0I-csS">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XQR-ZM-Dee" id="ByO-XK-duq"/>
+                            <outlet property="delegate" destination="XQR-ZM-Dee" id="g1f-dN-kAq"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9MG-TG-cym" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2244" y="266"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="e9c-st-OTU">
@@ -226,7 +254,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EOC-5X-b8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="-753"/>
+            <point key="canvasLocation" x="772" y="-757"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="GaA-gS-yBn">
@@ -255,7 +283,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9r-Ab-89v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="541"/>
+            <point key="canvasLocation" x="780" y="517"/>
         </scene>
         <!--Route Detail View Controller-->
         <scene sceneID="dHd-4w-S8x">
@@ -311,10 +339,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kea-Vm-A4o">
                                 <rect key="frame" x="167" y="829" width="120" height="30"/>
                                 <state key="normal" title="查看所有评论"/>
+                                <connections>
+                                    <action selector="getRouteRating:" destination="7Ne-HH-NzK" eventType="touchUpInside" id="abu-dS-OHY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51K-ob-EaL">
                                 <rect key="frame" x="420" y="822" width="108" height="30"/>
                                 <state key="normal" title="提交评论"/>
+                                <connections>
+                                    <action selector="rate:" destination="7Ne-HH-NzK" eventType="touchUpInside" id="9ra-uE-tAW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="intro" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xc-YL-AdF">
                                 <rect key="frame" x="79" y="148" width="378" height="193"/>
@@ -337,7 +371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1f-Aw-6pN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1523" y="439"/>
+            <point key="canvasLocation" x="1539" y="451"/>
         </scene>
         <!--Item-->
         <scene sceneID="31Q-Aa-Zjm">

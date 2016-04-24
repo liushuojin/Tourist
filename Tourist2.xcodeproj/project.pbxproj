@@ -25,6 +25,7 @@
 		69F67A171CCCCA390097F161 /* SpotRatingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F67A161CCCCA390097F161 /* SpotRatingTableViewController.m */; };
 		69F67A1A1CCCF98A0097F161 /* RouteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F67A191CCCF98A0097F161 /* RouteTableViewController.m */; };
 		69F67A1D1CCCFDF10097F161 /* RouteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F67A1C1CCCFDF10097F161 /* RouteDetailViewController.m */; };
+		69F67A201CCD12150097F161 /* RouteRatingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F67A1F1CCD12150097F161 /* RouteRatingTableViewController.m */; };
 		69F8676D1CC7F0690080D8DD /* RegisterAndLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F8676C1CC7F0690080D8DD /* RegisterAndLoginViewController.m */; };
 		69FC43DD1CC51B34005AB110 /* SpotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FC43DC1CC51B34005AB110 /* SpotDetailViewController.m */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,8 @@
 		69F67A191CCCF98A0097F161 /* RouteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteTableViewController.m; sourceTree = "<group>"; };
 		69F67A1B1CCCFDF10097F161 /* RouteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteDetailViewController.h; sourceTree = "<group>"; };
 		69F67A1C1CCCFDF10097F161 /* RouteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteDetailViewController.m; sourceTree = "<group>"; };
+		69F67A1E1CCD12150097F161 /* RouteRatingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteRatingTableViewController.h; sourceTree = "<group>"; };
+		69F67A1F1CCD12150097F161 /* RouteRatingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteRatingTableViewController.m; sourceTree = "<group>"; };
 		69F8676B1CC7F0690080D8DD /* RegisterAndLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAndLoginViewController.h; sourceTree = "<group>"; };
 		69F8676C1CC7F0690080D8DD /* RegisterAndLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAndLoginViewController.m; sourceTree = "<group>"; };
 		69FC43DB1CC51B34005AB110 /* SpotDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotDetailViewController.h; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 				69F67A191CCCF98A0097F161 /* RouteTableViewController.m */,
 				69F67A1B1CCCFDF10097F161 /* RouteDetailViewController.h */,
 				69F67A1C1CCCFDF10097F161 /* RouteDetailViewController.m */,
+				69F67A1E1CCD12150097F161 /* RouteRatingTableViewController.h */,
+				69F67A1F1CCD12150097F161 /* RouteRatingTableViewController.m */,
 			);
 			name = Route;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 				69FC43DD1CC51B34005AB110 /* SpotDetailViewController.m in Sources */,
 				69815D041CC092AA00E5A3D5 /* SpotViewController.m in Sources */,
 				69F67A1A1CCCF98A0097F161 /* RouteTableViewController.m in Sources */,
+				69F67A201CCD12150097F161 /* RouteRatingTableViewController.m in Sources */,
 				696393C11CBEA205009F334F /* main.m in Sources */,
 				69005AEA1CC3AE2D00AD0DFB /* Spot.m in Sources */,
 				69F67A1D1CCCFDF10097F161 /* RouteDetailViewController.m in Sources */,
