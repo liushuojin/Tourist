@@ -23,6 +23,8 @@
 		69F645651CCA6959000D8F8C /* TouristTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F645641CCA6959000D8F8C /* TouristTabBarController.m */; };
 		69F67A141CCCC4A50097F161 /* SpotRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F67A131CCCC4A50097F161 /* SpotRating.m */; };
 		69F67A171CCCCA390097F161 /* SpotRatingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F67A161CCCCA390097F161 /* SpotRatingTableViewController.m */; };
+		69F67A1A1CCCF98A0097F161 /* RouteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F67A191CCCF98A0097F161 /* RouteTableViewController.m */; };
+		69F67A1D1CCCFDF10097F161 /* RouteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F67A1C1CCCFDF10097F161 /* RouteDetailViewController.m */; };
 		69F8676D1CC7F0690080D8DD /* RegisterAndLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F8676C1CC7F0690080D8DD /* RegisterAndLoginViewController.m */; };
 		69FC43DD1CC51B34005AB110 /* SpotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FC43DC1CC51B34005AB110 /* SpotDetailViewController.m */; };
 /* End PBXBuildFile section */
@@ -77,6 +79,10 @@
 		69F67A131CCCC4A50097F161 /* SpotRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotRating.m; sourceTree = "<group>"; };
 		69F67A151CCCCA390097F161 /* SpotRatingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotRatingTableViewController.h; sourceTree = "<group>"; };
 		69F67A161CCCCA390097F161 /* SpotRatingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotRatingTableViewController.m; sourceTree = "<group>"; };
+		69F67A181CCCF98A0097F161 /* RouteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteTableViewController.h; sourceTree = "<group>"; };
+		69F67A191CCCF98A0097F161 /* RouteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteTableViewController.m; sourceTree = "<group>"; };
+		69F67A1B1CCCFDF10097F161 /* RouteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteDetailViewController.h; sourceTree = "<group>"; };
+		69F67A1C1CCCFDF10097F161 /* RouteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteDetailViewController.m; sourceTree = "<group>"; };
 		69F8676B1CC7F0690080D8DD /* RegisterAndLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAndLoginViewController.h; sourceTree = "<group>"; };
 		69F8676C1CC7F0690080D8DD /* RegisterAndLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAndLoginViewController.m; sourceTree = "<group>"; };
 		69FC43DB1CC51B34005AB110 /* SpotDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotDetailViewController.h; sourceTree = "<group>"; };
@@ -213,6 +219,10 @@
 			children = (
 				69815D051CC0930500E5A3D5 /* RouteViewController.h */,
 				69815D061CC0930500E5A3D5 /* RouteViewController.m */,
+				69F67A181CCCF98A0097F161 /* RouteTableViewController.h */,
+				69F67A191CCCF98A0097F161 /* RouteTableViewController.m */,
+				69F67A1B1CCCFDF10097F161 /* RouteDetailViewController.h */,
+				69F67A1C1CCCFDF10097F161 /* RouteDetailViewController.m */,
 			);
 			name = Route;
 			sourceTree = "<group>";
@@ -374,8 +384,10 @@
 				69F67A171CCCCA390097F161 /* SpotRatingTableViewController.m in Sources */,
 				69FC43DD1CC51B34005AB110 /* SpotDetailViewController.m in Sources */,
 				69815D041CC092AA00E5A3D5 /* SpotViewController.m in Sources */,
+				69F67A1A1CCCF98A0097F161 /* RouteTableViewController.m in Sources */,
 				696393C11CBEA205009F334F /* main.m in Sources */,
 				69005AEA1CC3AE2D00AD0DFB /* Spot.m in Sources */,
+				69F67A1D1CCCFDF10097F161 /* RouteDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

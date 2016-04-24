@@ -1,25 +1,22 @@
 //
-//  RouteViewController.m
+//  RouteDetailViewController.m
 //  Tourist2
 //
-//  Created by 刘硕晋 on 16/4/15.
+//  Created by 刘硕晋 on 16/4/24.
 //  Copyright © 2016年 ginkee. All rights reserved.
 //
 
-#import "RouteViewController.h"
-#import "TouristTabBarController.h"
+#import "RouteDetailViewController.h"
 
-@interface RouteViewController ()
+@interface RouteDetailViewController ()
 
 @end
 
-@implementation RouteViewController
+@implementation RouteDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    TouristTabBarController* vc = self.tabBarController;
-    self.nameText = vc.nameText;
 }
 
 - (void)didReceiveMemoryWarning {

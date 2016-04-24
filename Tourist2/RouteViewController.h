@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RouteViewController : UINavigationController
-
+@property NSString* nameText;
 @end
