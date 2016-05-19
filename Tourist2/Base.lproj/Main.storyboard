@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yt8-jo-lBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1532" y="8"/>
+            <point key="canvasLocation" x="-2484" y="-16"/>
         </scene>
         <!--Spot Detail View Controller-->
         <scene sceneID="fW3-tI-XHq">
@@ -383,7 +383,7 @@
             </objects>
             <point key="canvasLocation" x="1539" y="451"/>
         </scene>
-        <!--Item-->
+        <!--用户中心-->
         <scene sceneID="31Q-Aa-Zjm">
             <objects>
                 <viewController id="eGg-e9-UOc" customClass="UserViewController" sceneMemberID="viewController">
@@ -395,48 +395,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6b1-ZM-WTx">
-                                <rect key="frame" x="77" y="28" width="447" height="312"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="关于珠海市旅游资源及路线查询系统" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7p-yu-6jp">
-                                <rect key="frame" x="143" y="49" width="302" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTz-M0-4ne">
+                                <rect key="frame" x="168" y="432" width="476" height="164"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6b1-ZM-WTx">
+                                <rect key="frame" x="0.0" y="28" width="768" height="362"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="7XL-pG-6Ft">
-                                <rect key="frame" x="168" y="90" width="240" height="128"/>
+                                <rect key="frame" x="143" y="90" width="458" height="153"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="本系统是提供了珠海市旅游资源及路线的查询服务！祝您旅途愉快！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbc-KG-VSj">
-                                <rect key="frame" x="168" y="241" width="240" height="66"/>
+                                <rect key="frame" x="264" y="263" width="240" height="66"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTz-M0-4ne">
-                                <rect key="frame" x="168" y="364" width="240" height="120"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="关于珠海市旅游资源及路线查询系统" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7p-yu-6jp">
+                                <rect key="frame" x="233" y="49" width="302" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="glt-x4-MtP"/>
+                    <tabBarItem key="tabBarItem" title="用户中心" id="glt-x4-MtP"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="name" destination="iTz-M0-4ne" id="zCa-Mj-EJG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8S-zq-nT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="-875"/>
+            <point key="canvasLocation" x="-193" y="-1859"/>
         </scene>
-        <!--Item-->
+        <!--旅游路线-->
         <scene sceneID="0jN-pf-gkz">
             <objects>
                 <navigationController id="93c-KT-7vy" customClass="RouteViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="uHG-lu-vRI"/>
+                    <tabBarItem key="tabBarItem" title="旅游路线" id="uHG-lu-vRI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p58-Yp-L7N">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -449,11 +450,11 @@
             </objects>
             <point key="canvasLocation" x="93" y="500"/>
         </scene>
-        <!--Item-->
+        <!--旅游景点-->
         <scene sceneID="bL1-v3-gre">
             <objects>
                 <navigationController id="c6v-w5-mft" customClass="SpotViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="L4Q-07-XRs"/>
+                    <tabBarItem key="tabBarItem" title="旅游景点" id="L4Q-07-XRs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jZz-vW-LoT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -464,7 +465,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cah-ia-dVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93" y="-175"/>
+            <point key="canvasLocation" x="-193" y="-631"/>
         </scene>
         <!--Tourist Tab Bar Controller-->
         <scene sceneID="VcO-17-lol">
@@ -483,7 +484,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NxM-Hf-EDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-691" y="3"/>
+            <point key="canvasLocation" x="-1483" y="-29"/>
         </scene>
     </scenes>
     <resources>
