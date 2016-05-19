@@ -20,7 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     TouristTabBarController *vc = self.tabBarController;
-    self.name.text = vc.nameText;
+    self.name.text = [NSString stringWithFormat:@"%@,%@",vc.nameText,@"欢迎登录珠海市旅游资源及路线查询系统"];
+    //self.name.text = vc.nameText ;
     
 }
 

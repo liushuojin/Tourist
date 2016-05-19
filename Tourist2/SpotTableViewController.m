@@ -147,12 +147,15 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+/*
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    }
+ */
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     SpotDetailViewController* spotDetail = [storyboard instantiateViewControllerWithIdentifier:@"spotDetail"];
     NSDictionary* dict = [self.spotArray objectAtIndex:indexPath.row];
-
+    
     //cell.textLabel.text = [dict valueForKey:@"name"];
     //spotDetail
     //NSLog(@"%@", spotDetail);
@@ -165,6 +168,6 @@
     //NSLog(@"na->:%@", vc.nameText);
     [spotDetail setUserName:vc.nameText];
     [self.navigationController pushViewController:spotDetail animated:YES];
-}
 
+}
 @end
